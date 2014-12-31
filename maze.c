@@ -123,13 +123,9 @@ void __generateMaze(uint8_t *maze, int width, int height, int difficulty)
 	int curr = start;
 	while (unvisitedCells)
 	{
-		//printf("\nunvisitedCells: %d\n", unvisitedCells);
-		//__printMaze(maze,width,height);
 		int *list = __findNeighbours(curr, width, height);
-		//printf("list[0] Before: %d, Cell Value: %d\n", list[0],*(maze + list[0]));
 		if (__checkVisited(maze,list))
 		{
-			//printf("list[0] After: %d, Cell Value: %d\n", list[0],*(maze + list[0]));
 			__clearWall(maze,curr,list[0],width);
 			curr = list[0];
 			*sp = curr;
