@@ -10,6 +10,7 @@ Benchmarks
 System: Intel Core i7 @ 2.7GHz with 1600MHz RAM
 
 Maze Sizes: 20 x 20, 100 x 100, 500 x 500 and 1000 x 1000
+
 Generation Time: ~0.3 ms, ~2.2ms, ~35ms and ~126ms
 
 > Upcoming: Path-Finding Algorithm for Solver
